@@ -1,0 +1,8 @@
+<template name="home">
+{{#markdown}}
+{{/markdown}}
+{{#each appsList}}
+  {{> appList }}
+{{/each}}
+<button class="btn btn-info">Load more</button>
+</template>

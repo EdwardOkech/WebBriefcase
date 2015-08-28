@@ -1,0 +1,23 @@
+<template name="editApp">
+    <div class="editApp">
+        <form>
+            <label>
+                Title
+                <input type="text" name="title" placeholder="title" value="{{title}}">
+            </label>
+            <label>
+                Url
+                <input type="text" name="url" placeholder="url" value="{{url}}">
+            </label>
+            <label>
+                Registered
+                <input type="text" name="registered" placeholder="registered on" value="{{registered}}">
+            </label>
+            <label>
+                Client
+                <input type="text" name="client" placeholder="client" value="{{client}}">
+            </label>
+            <button type="submit" class="btn-warning">Save App</button>
+        </form>
+    </div>
+</template>

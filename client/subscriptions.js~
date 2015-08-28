@@ -1,0 +1,4 @@
+Session.setDefault('lazyloadLimit', 3);
+Tracker.autorun(function(){
+Meteor.subscribe('lazyload-apps', Session.get('lazyloadLimit'));
+});

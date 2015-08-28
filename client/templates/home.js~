@@ -1,0 +1,5 @@
+Template.home.helpers({
+   appsList: function(){
+       return Apps.find({}, {sort: {title: 0}});
+   }
+}); 

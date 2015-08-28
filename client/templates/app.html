@@ -1,0 +1,16 @@
+<template name="app">
+  <h2>{{title}}</h2>
+  <h3>{{url}}</h3>
+  <h3>{{registered}}</h3>
+  <h3>{{client}}</h3>
+  <small>
+      {{#if currentUser}}
+         <a href="/edit-app/{{_id}}"><button class="btn-warning btn-sm">Edit App</button></a>
+      {{/if}}
+  </small>
+  <div class="appContent">
+    {{#markdown}}
+  {{text}}
+    {{/markdown}}
+  </div>
+</template>

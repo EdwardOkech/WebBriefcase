@@ -1,0 +1,33 @@
+<template name="layout">
+  <header class="navbar navbar-default" role="navigation">
+     <div class="navbar-header">
+         <div class="container">
+             <a class="navbar-brand" href="/">Web Briefcase</a>
+              <ul class="nav nav-tabs">
+                 <li role="presentation" class="active"><a href="/">Apps</a></li>
+                 <li role="presentation"><a href="/news">News & Events</a></li>
+                 <li role="presentation"><a href="/jobs">Jobs</a></li>
+                 <li role="presentation"><a href="/about">About</a></li>
+                  {{> loginButtons}}
+              </ul>
+           </div>
+        </div>
+    </header>
+   <div class="container">
+    <main>
+     {{> yield }}
+    </main>
+   </div>
+</template>
+<template name="notFound">
+  <div class="center">
+    <h2>Sorry</h2>
+    <h3>Sommething broke...this page doesn't exist!!!</h3>
+  </div>
+</template>
+<template name="loading">
+  <div class="center">
+     <h3>Loading...</h3>
+  </div>
+</template>
+       

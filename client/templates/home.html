@@ -1,0 +1,12 @@
+<template name="home">
+{{#markdown}}
+{{/markdown}}
+{{#if currentUser}}
+   <a href="/add-app" class="addPost"><button class="btn btn-warning btn-sm">Add App</button></a>
+{{/if}}
+<br/>
+{{#each appsList}}
+  {{> appList }}
+{{/each}}
+<button class="btn btn-warning">Load more</button>
+</template>
