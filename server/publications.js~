@@ -1,0 +1,11 @@
+Meteor.publish('lazyload-apps', function(limit){
+    return Apps.find({}, {
+       limit: limit,
+       fields: {
+         title: 1
+      }
+   });
+});
+Meteor.publish("single-app", function(_id){
+    return Apps.find({_id:_id});
+});
